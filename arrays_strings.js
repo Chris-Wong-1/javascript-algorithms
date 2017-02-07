@@ -13,8 +13,9 @@ function isUnique(string) {
   return true;
 }
 
-console.log(isUnique("cat"));
-console.log(isUnique("mom"));
+// console.log(isUnique("cat"));
+// console.log(isUnique("mom"));
+
 //
 // def unique_with_hash?(str)
 //   chars_hash = Hash.new(0)
@@ -31,6 +32,21 @@ console.log(isUnique("mom"));
 // end
 //
 // # 1.2 Check Permutation: Given two strings, write a method to decide if one is a permutation of the other.
+
+function charCount(str) {
+  let chars = {};
+  for (var i = 0; i < str.length; i++) {
+    chars.str[i] += 1;
+  };
+  return chars
+}
+
+console.log(charCount("turtle"))
+
+function isPermutation(str1, str2) {
+
+}
+
 //
 // def permutation(str1, str2)
 //   str1.split('').sort == str2.split('').sort
