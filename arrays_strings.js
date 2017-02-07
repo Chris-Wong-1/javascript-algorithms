@@ -5,7 +5,7 @@ function isUnique(string) {
   for (var i = 0; i < string.length; i++) {
     currentLetter = string[i];
     for (var j = 0; j < string.length; j++) {
-      if (currentLetter === string[i] && i != j) {
+      if (currentLetter === string[j] && i != j) {
         return false;
       };
     };
@@ -13,6 +13,8 @@ function isUnique(string) {
   return true;
 }
 
+console.log(isUnique("cat"));
+console.log(isUnique("mom"));
 //
 // def unique_with_hash?(str)
 //   chars_hash = Hash.new(0)
