@@ -1,6 +1,6 @@
 function isPrime (n) {
   let divisor = 2;
-  while (n > divisor) {
+  while (Math.sqrt(n) >= divisor) {
     if (n % divisor == 0) {
       return false;
     }
