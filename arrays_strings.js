@@ -37,10 +37,11 @@ function isPermutation (str1, str2) {
 // console.log(isPermutation('dog', 'cat'))
 
 // # 1.3 URLify: Write a method to replace all spaces in a string with '%20'.
-//
-// def urlify(str)
-//   words = str.split(' ')
-//   words.join('%20')
-// end
-//
-// p urlify("the cat in the  hat  ")
+
+function urlify (str) {
+  let words = str.split(' ')
+  let url = words.join('%20')
+  return url
+}
+
+// console.log(urlify('the cat in the hat'))
