@@ -2,7 +2,7 @@
 function removeDuplicates (array) {
   let exists = {}
   let uniqueArr = []
-  for (var i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     let el = array[i]
     if (!exists[el]) {
       uniqueArr.push(el)
